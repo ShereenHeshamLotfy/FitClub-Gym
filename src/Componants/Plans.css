@@ -1,0 +1,100 @@
+.Plans{
+    display: flex;
+    flex-direction: column;
+    gap:4rem;
+    padding:0 2rem;
+    margin-top: -4rem;
+    position: relative;
+}
+.plans-header{
+    display: flex;
+    gap:2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    font-style: italic;
+}
+.plans-categories{
+    display: flex;
+    gap:3rem;
+    justify-content: center;
+    align-items: center;
+}
+.plan-category{
+    display: flex;
+    flex-direction: column;
+    background: var(--caloryCard);
+    padding:1.5rem;
+    gap:2rem;
+    color:white;
+    width:15rem;
+}
+.plan-category>:nth-child(1){
+    width: 2rem;
+    height: 2rem;
+    fill:var(--orange);
+}
+.plan-category:nth-child(2){
+    background: var(--planCard);
+    transform:scale(1.1);
+}
+.plan-category:nth-child(2)>:nth-child(1){
+    fill:white;
+}
+.plan-category:nth-child(2)>:nth-child(6){
+    color:orange;
+}
+.plan-category>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.plan-category>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.plan-category>:nth-child(5){
+    font-size: 0.8rem;  
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.feature{
+    display: flex;
+    gap:1rem;
+}
+.feature>img{
+    width:1rem;
+}
+.plan-blur1{
+    width:32rem;
+    height: 23rem;
+    top:6rem;
+    left:0;
+}
+.plan-blur2{
+    width:32rem;
+    height: 23rem;
+    top:10rem;
+    right:0;
+}
+@media screen and (max-width:768px) {
+    .plans-header{
+        display: flex;
+        flex-direction:column ;
+        gap:1rem;
+        font-size: x-large;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .plans-categories{
+        display: flex;
+        flex-direction: column;
+    }
+    .plan-category:nth-child(2){
+        transform:scale(1);
+    }
+
+}
